@@ -1,5 +1,5 @@
 import React,{useContext}from "react";
-import {UserContext} from "../../context/userContext";
+import {UserContext} from "../context/UserContext";
 import Navbar from "../layouts/Navbar"
 import SideMenu from "../layouts/SideMenu"
 const DashboardLayout=({children,activeMenu})=>{
