@@ -11,11 +11,11 @@ import SignUp from "./pages/Auth/SignUp";
 import Home from "./pages/Dashboard/Home";
 import Income from "./pages/Dashboard/Income";
 import Expense from "./pages/Dashboard/Expense";
-import UserProvider from "./context/userContext";
+import UserContext from "./context/userContext";
 import {Toaster} from "react-hot-toast";
 const App=()=>{
   return(
-    <UserProvider>
+    <UserContext>
     <div>
       <Router>
         <Routes>
@@ -36,7 +36,7 @@ const App=()=>{
           },
        }}
        />
-    </UserProvider>
+    </UserContext>
   )
 }
 export default App;
