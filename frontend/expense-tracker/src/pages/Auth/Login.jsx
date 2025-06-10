@@ -37,11 +37,9 @@ try{
    updateUser(user)
     navigate("/dashboard")
   }
-   navigate("/dashboard")
 }
 catch(error)
 {
-   navigate("/dashboard")
   console.error(error)
   if(error.response && error.response.data.message)
   {
